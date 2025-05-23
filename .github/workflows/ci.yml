@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install fastapi uvicorn pytest flake8 asgi_lifespan asyncpg httpx pypika aiosql
+          pip install -r requirements.txt
 
       - name: Run tests with pytest
         run: |
